@@ -7,9 +7,9 @@ use Illuminate\Database\Eloquent\Model;
 class OrderLine extends Model
 {
     public function order(){
-        $this->belongsTo('App\Order');
+        return $this->belongsTo('App\Order');
     }
     public function meal(){
-        $this->belongsTo('App\Meal');
+        return $this->belongsTo('App\Meal');
     }
 }

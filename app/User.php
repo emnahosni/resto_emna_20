@@ -37,9 +37,9 @@ class User extends Authenticatable
         'email_verified_at' => 'datetime',
     ];
     public function Booking(){
-        $this->hasMany('App\Booking');
+        return $this->hasMany('App\Booking');
     }
     public function Order(){
-        $this->hasMany('App\Order');
+        return $this->hasMany('App\Order');
     }
 }

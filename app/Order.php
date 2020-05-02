@@ -7,9 +7,9 @@ use Illuminate\Database\Eloquent\Model;
 class Order extends Model
 {
     public function user(){
-        $this->belongsTo('App\user');
+        return $this->belongsTo('App\user');
     }
     public function OrderLines(){
-        $this->hasMany('App\OrderLine');
+        return $this->hasMany('App\OrderLine');
     }
 }
